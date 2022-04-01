@@ -2,6 +2,7 @@ const url = "https://github.com/topics";
 
 const request = require("request");
 const cheerio = require("cheerio");
+const {getPL} = require("./getProjectsLink");
 
 request(url,cb); // request the url https://github.com/topics
 
@@ -24,6 +25,7 @@ function getFirst3FeaturedTopics(html){ //function that will get us first 3 link
         // console.log(relativeLink);
         let fullUrlToTopic = "https://github.com" + relativeLink; //full link to open topic eg: https://github.com/topics
         // console.log(fullUrlToTopic);
+        getPL(fullUrlToTopic);
         
     }
 }
