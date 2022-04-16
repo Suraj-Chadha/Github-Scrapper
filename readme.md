@@ -7,5 +7,5 @@
 </ul>
 
 <h3> Refrence:</h3>
-  [https://www.npmjs.com/package/jspdf](https://www.npmjs.com/package/jspdf]
+   https://www.npmjs.com/package/jspdf
 </h3>
